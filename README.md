@@ -23,7 +23,7 @@ The syntax used in grammar file is close to BNF, you can quickly check it by Goo
 https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
 
 
-## Follow
+## Flow
 - First, check out the example input file `inputs/input.txt`.
 
 - Understand the crafted grammar in `grammar/AWSIMScriptGrammar.g4` file. Note that it likely the case that we need to update this grammar later.

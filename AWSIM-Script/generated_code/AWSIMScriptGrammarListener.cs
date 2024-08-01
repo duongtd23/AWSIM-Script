@@ -150,4 +150,34 @@ public interface IAWSIMScriptGrammarListener : IParseTreeListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	void ExitSpawnDelayOptionExp([NotNull] AWSIMScriptGrammarParser.SpawnDelayOptionExpContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AWSIMScriptGrammarParser.stringExp"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterStringExp([NotNull] AWSIMScriptGrammarParser.StringExpContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AWSIMScriptGrammarParser.stringExp"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitStringExp([NotNull] AWSIMScriptGrammarParser.StringExpContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AWSIMScriptGrammarParser.numberExp"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterNumberExp([NotNull] AWSIMScriptGrammarParser.NumberExpContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AWSIMScriptGrammarParser.numberExp"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitNumberExp([NotNull] AWSIMScriptGrammarParser.NumberExpContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AWSIMScriptGrammarParser.idExp"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterIdExp([NotNull] AWSIMScriptGrammarParser.IdExpContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AWSIMScriptGrammarParser.idExp"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitIdExp([NotNull] AWSIMScriptGrammarParser.IdExpContext context);
 }

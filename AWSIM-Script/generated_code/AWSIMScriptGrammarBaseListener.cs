@@ -179,6 +179,42 @@ public partial class AWSIMScriptGrammarBaseListener : IAWSIMScriptGrammarListene
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitSpawnDelayOptionExp([NotNull] AWSIMScriptGrammarParser.SpawnDelayOptionExpContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AWSIMScriptGrammarParser.stringExp"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterStringExp([NotNull] AWSIMScriptGrammarParser.StringExpContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AWSIMScriptGrammarParser.stringExp"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitStringExp([NotNull] AWSIMScriptGrammarParser.StringExpContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AWSIMScriptGrammarParser.numberExp"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterNumberExp([NotNull] AWSIMScriptGrammarParser.NumberExpContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AWSIMScriptGrammarParser.numberExp"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitNumberExp([NotNull] AWSIMScriptGrammarParser.NumberExpContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AWSIMScriptGrammarParser.idExp"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterIdExp([NotNull] AWSIMScriptGrammarParser.IdExpContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AWSIMScriptGrammarParser.idExp"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitIdExp([NotNull] AWSIMScriptGrammarParser.IdExpContext context) { }
 
 	/// <inheritdoc/>
 	/// <remarks>The default implementation does nothing.</remarks>

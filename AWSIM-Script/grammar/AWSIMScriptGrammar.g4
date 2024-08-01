@@ -11,7 +11,7 @@ assignmentStm
     : variableExp '=' expression ';';
 
 expression
-    : STRING
+    : stringExp
     | positionExp
     | routeExp
     | arrayExp
@@ -20,7 +20,7 @@ expression
     | function;
 
 function
-    : ID '(' argumentList? ')' ;
+    : idExp '(' argumentList? ')' ;
 
 argumentList
     : expression ( ',' expression )*
@@ -34,19 +34,26 @@ arrayExp
 positionExp
     : lanePositionExp;
 lanePositionExp
-    : STRING ('at' NUMBER)?;
+    : stringExp ('at' numberExp)?;
 
 routeExp
-    : STRING ('with-speed-limit' NUMBER)?;
+    : stringExp ('with-speed-limit' numberExp)?;
 
 // variable name, e.g., npc1
-variableExp: ID;
+variableExp: idExp;
 
 spawnDelayOptionExp
-    : 'delay' '(' NUMBER ')'
-    | 'delay-movement' '(' NUMBER ')'
-    | 'delay-until-ego-move' '(' NUMBER ')'
-    | 'delay-until-ego-engaged' '(' NUMBER ')';
+    : 'delay' '(' numberExp ')'
+    | 'delay-movement' '(' numberExp ')'
+    | 'delay-until-ego-move' '(' numberExp ')'
+    | 'delay-until-ego-engaged' '(' numberExp ')';
+
+stringExp
+    : STRING;
+numberExp
+    : NUMBER;
+idExp
+    : ID;
 
 // number and string data types
 STRING : '"' .*? '"';

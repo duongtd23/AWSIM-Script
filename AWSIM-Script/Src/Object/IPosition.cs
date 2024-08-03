@@ -6,6 +6,10 @@ namespace AWSIM_Script.Object
 	// In future, we might add other method to specify it.
 	public interface IPosition
 	{
-	}
+        // lane name
+        public string GetLane();
+        // distance from the starting point of the lane
+        public float GetOffset();
+    }
 }
 

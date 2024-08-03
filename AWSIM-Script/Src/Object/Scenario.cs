@@ -1,16 +1,16 @@
 ﻿using System;
 namespace AWSIM_Script.Object
 {
-	// please add more necessary attributes
 	public class Scenario
 	{
 		public Scenario()
 		{
+			NPCs = new List<NPC>();
         }
 		// list of NPCs
-        public List<NPCScriptObject> NPCs { get; set; }
+        public List<NPC> NPCs { get; set; }
 
-		// some more config might be added later
+		// some other config might be added later
     }
 }
 

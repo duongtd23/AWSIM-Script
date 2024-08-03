@@ -56,11 +56,11 @@ public interface IAWSIMScriptGrammarVisitor<Result> : IParseTreeVisitor<Result> 
 	/// <return>The visitor result.</return>
 	Result VisitExpression([NotNull] AWSIMScriptGrammarParser.ExpressionContext context);
 	/// <summary>
-	/// Visit a parse tree produced by <see cref="AWSIMScriptGrammarParser.function"/>.
+	/// Visit a parse tree produced by <see cref="AWSIMScriptGrammarParser.functionExp"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
-	Result VisitFunction([NotNull] AWSIMScriptGrammarParser.FunctionContext context);
+	Result VisitFunctionExp([NotNull] AWSIMScriptGrammarParser.FunctionExpContext context);
 	/// <summary>
 	/// Visit a parse tree produced by <see cref="AWSIMScriptGrammarParser.argumentList"/>.
 	/// </summary>

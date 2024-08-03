@@ -4,11 +4,10 @@ scenario
     : (statement)+ EOF;
 
 statement
-    : assignmentStm
-    | function ';' ;
+    : (assignmentStm | functionExp) ';' ;
 
 assignmentStm
-    : variableExp '=' expression ';';
+    : variableExp '=' expression;
 
 expression
     : stringExp
@@ -17,9 +16,9 @@ expression
     | arrayExp
     | variableExp
     | spawnDelayOptionExp
-    | function;
+    | functionExp;
 
-function
+functionExp
     : idExp '(' argumentList? ')' ;
 
 argumentList
@@ -43,10 +42,12 @@ routeExp
 variableExp: idExp;
 
 spawnDelayOptionExp
-    : 'delay' '(' numberExp ')'
-    | 'delay-movement' '(' numberExp ')'
-    | 'delay-until-ego-move' '(' numberExp ')'
-    | 'delay-until-ego-engaged' '(' numberExp ')';
+    : 'delay-spawn' '(' numberExp ')'
+    | 'delay-move' '(' numberExp ')'
+    | 'delay-spawn-until-ego-move' '(' numberExp ')'
+    | 'delay-move-until-ego-move' '(' numberExp ')'
+    | 'delay-spawn-until-ego-engaged' '(' numberExp ')'
+    | 'delay-move-until-ego-engaged' '(' numberExp ')';
 
 stringExp
     : STRING;

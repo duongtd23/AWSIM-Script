@@ -16,6 +16,8 @@
     <None Remove="inputs\" />
     <None Remove="generated_code\" />
     <None Remove="grammar\" />
+    <None Remove="Src\Exception\" />
+    <None Remove="Src\Parser\Object\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Src\" />
@@ -25,6 +27,8 @@
     <Folder Include="inputs\" />
     <Folder Include="generated_code\" />
     <Folder Include="grammar\" />
+    <Folder Include="Src\Exception\" />
+    <Folder Include="Src\Parser\Object\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Antlr4.Runtime.Standard" Version="4.13.1" />

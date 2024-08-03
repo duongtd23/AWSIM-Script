@@ -3,8 +3,9 @@ namespace AWSIM_Script.Object
 {
 	public class NPCConfig
 	{
-		public NPCConfig()
+		public NPCConfig(Dictionary<string, float> route)
 		{
+			RouteSpeeds = route;
 		}
 
 		// routes and (optional) desired speed limit
